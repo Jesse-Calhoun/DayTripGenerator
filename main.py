@@ -18,7 +18,22 @@ import random
 
 #(5 points): Single Responsibility: As a developer, I want all of my functions to have a Single Responsibility. Remember, each function should do just one thing!
 
-destination = ['New York City', 'Dallas', 'Washington D.C.', 'Philadelphia']
+destinations = ['New York City', 'Dallas', 'Washington D.C.', 'Philadelphia']
 restaurants = ['Steakhouse', 'Mcdonalds', 'Del Taco', 'Hibachi']
-form_of_entertainment = ['NFL game', 'Comedy Show', 'Concert', 'Nightclub']
-mode_of_transportation = ['Uber', 'Limo Service', 'Sports Car', 'Bus']
+forms_of_entertainment = ['NFL game', 'Comedy Show', 'Concert', 'Nightclub']
+modes_of_transportation = ['Uber', 'Limo Service', 'Sports Car', 'Bus']
+
+
+def run_day_trip_generator():
+    city = random.choice(destinations)
+    restaraunt = random.choice(restaurants)
+    form_of_entertainment = random.choice(forms_of_entertainment)
+    mode_of_transport = random.choice(modes_of_transportation)
+    print('City: ', city + '\n' + 'Restaurant: ', restaraunt + '\n' + 'Form of entertainment: ', form_of_entertainment + '\n' + 'Mode of Transport: ', mode_of_transport)
+    #print('Restaurant: ', restaraunt)
+    #print('Form of entertainment: ', form_of_entertainment)
+    #print('Mode of Transport: ', mode_of_transport)
+
+run_day_trip_generator()
+
+
