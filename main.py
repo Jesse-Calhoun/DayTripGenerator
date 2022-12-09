@@ -29,7 +29,14 @@ def run_day_trip_generator():
     restaraunt = random.choice(restaurants)
     form_of_entertainment = random.choice(forms_of_entertainment)
     mode_of_transport = random.choice(modes_of_transportation)
-    print('City: ', city + '\n' + 'Restaurant: ', restaraunt + '\n' + 'Form of entertainment: ', form_of_entertainment + '\n' + 'Mode of Transport: ', mode_of_transport)
+    print(f'''Here's your trip!
+City: {city}
+Restaurant: {restaraunt}
+Form of entertainment: {form_of_entertainment}
+Mode of Transport: {mode_of_transport}''')
+
+    #print('City: ', city + '\n' + 'Restaurant: ', restaraunt + '\n' + 'Form of entertainment: ', form_of_entertainment + '\n' + 'Mode of Transport: ', mode_of_transport)
+    #print('City: ', city)
     #print('Restaurant: ', restaraunt)
     #print('Form of entertainment: ', form_of_entertainment)
     #print('Mode of Transport: ', mode_of_transport)
