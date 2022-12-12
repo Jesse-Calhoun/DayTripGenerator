@@ -32,7 +32,7 @@ def satisfied(list_of_events):
     response = input('Are you satisfied with this trip? y/n ') 
     print()
     while response == 'n':
-        change_request = input('What would you like to change about your trip? type done when finished. ')
+        change_request = input('What would you like to change about your trip? Type done when finished. ')
         if change_request == 'destination':
             list_of_events[0] = random.choice(destinations)
         elif change_request == 'restaurant':
